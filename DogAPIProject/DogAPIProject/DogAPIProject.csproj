@@ -6,4 +6,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Dog Park.jpg" />
+    <None Remove="dogbone.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Dog Park.jpg" />
+    <Resource Include="dogbone.png" />
+  </ItemGroup>
+
 </Project>

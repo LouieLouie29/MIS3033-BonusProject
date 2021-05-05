@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:DogAPIProject"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="Main">
+        <Image x:Name="imgDogPark" Margin="-148,-142,-148,-143" Source="/Dog Park.jpg"/>
+        <Button x:Name="btnRequest" Content="Woof!" Margin="316,365,355,29" Click="btnRequest_Click">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/dogbone.png"/>
+            </Button.OpacityMask>
+        </Button>
+        <TextBox x:Name="txtBreed" TextWrapping="Wrap" Margin="74,293,536,102" Opacity="0.7"/>
+        <Label x:Name="lblBreed" Content="Enter Breed" Margin="74,257,536,146" FontSize="18" FontFamily="Arial Black"/>
+        <Image x:Name="imgDog" Margin="545,148,99,146"/>
+        <Label x:Name="lblTitle" Content="Welcome to the Dog Park!" Margin="180,0,220,387" FontSize="32" FontFamily="Bahnschrift"/>
 
     </Grid>
 </Window>

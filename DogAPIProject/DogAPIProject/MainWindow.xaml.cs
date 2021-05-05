@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,44 @@ namespace DogAPIProject
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnRequest_Click(object sender, RoutedEventArgs e)
+        {
+            string breed = txtBreed.Text;
+
+            if (string.IsNullOrWhiteSpace(txtBreed.Text) == true)
+            {
+                MessageBox.Show("Please enter an actual breed!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                return;
+            }            
+
+            string url = $"https://dog.ceo/api/breed/{breed}/images/random";
+
+            DogAPI dog = null;
+
+            using (var client = new HttpClient())
+            {
+                var response = client.GetAsync(url).Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = response.Content.ReadAsStringAsync().Result;
+
+                    dog = JsonConvert.DeserializeObject<DogAPI>(json);
+                }
+                else
+                {
+                    MessageBox.Show("Sorry, that breed does not exist!");
+                    txtBreed.Clear();
+                }
+            }
+
+            if (dog != null)
+            {
+                imgDog.Source = new BitmapImage(new Uri(dog.message));
+            }
         }
     }
 }

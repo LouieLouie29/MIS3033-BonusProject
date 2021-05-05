@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "115CPQmMvbYJP1+JPprGD1Z5P1cRqnVBHS4VfaUEs28MjIdiuOqiPG3U37eocHDBeVltpHIBGQQNtv8riO2PVQ==",
+  "dgSpecHash": "9vJyD0gry6QbPX67k2TmweE0GQ2h1EZgUhIUAs+gsMFuRt8bKd2SfwGpdRqm9LrG1c2GOEoUAXmI9DdT3cPH2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\edwar\\source\\repos\\MIS3033-BonusProject\\DogAPIProject\\DogAPIProject\\DogAPIProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\edwar\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
