@@ -2,22 +2,17 @@
     background-color: antiquewhite;
 }
 
-div {
-    font-size: 20px;
-    color: black;
-}
-
 h1 {
     text-align: center;
     font-size: 350%;
-    color: indianred;
+    color: crimson;
     font-family: Arial,
 }
 
 nav {
     background-color: crimson;
     float: left;
-    height: 1500vh;
+    height: 100vh;
 }
 
 ul {
@@ -37,13 +32,16 @@ li a {
     border-radius: 20px;
 }
 
+#container {
+    padding: 2px 16px;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
     display: inline-block;
-    max-width: 200px;
-    max-height: 300px;
+    max-width: 300px;
     padding: 4px 4px;
     margin: 10px;
     background-color: white;
@@ -55,11 +53,6 @@ li a {
         transition: all 0.5s ease-in-out;
     }
 
-#container {
-    padding: 2px 16px;
-}
-
-a
-{
-    text-decoration: none;
+img {
+    border-radius: 5px 5px 0 0;
 }
