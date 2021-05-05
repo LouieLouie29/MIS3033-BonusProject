@@ -1,0 +1,42 @@
+﻿﻿body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    font-size: 350%;
+    color: crimson;
+    font-family: Arial,
+}
+
+nav {
+    background-color: crimson;
+    float: left;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    background-color: white;
+    color: crimson;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 5px;
+    padding: 1em 1.5em;
+    display: block;
+    border-radius: 20px;
+}
+
+div
+{
+    width: 60%;
+    border: 15px;
+    padding: 50px;
+    margin: 20px;
+    font-size: 32px;
+}
