@@ -58,3 +58,8 @@ li a {
 #container {
     padding: 2px 16px;
 }
+
+a
+{
+    text-decoration: none;
+}
