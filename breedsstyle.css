@@ -14,12 +14,12 @@ h1 {
     font-family: Arial,
 }
 
-nav {
-    position: absolute;
+nav {    
     background-color: crimson;
     float: left;
-    height: 100vh;
+    height: 100%;
     padding: 15px;
+    z-index: 1;
 }
 
 ul {
